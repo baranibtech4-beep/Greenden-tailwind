@@ -1,20 +1,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>GreenDen</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-50">
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
       <h1 class="text-2xl">Greenden</h1>
-      <svg
+      <svg id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-6 md:hidden"
+        class="size-6 md:hidden cursor-pointer"
       >
         <path
           stroke-linecap="round"
@@ -35,6 +35,23 @@
         </li>
       </ul>
     </nav>
+    <!-- Side Nav-bar -->
+     <section id="side-nav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width:50%;height:100vh;right:-50%">
+      <div class="p-5 text-right">
+        <p id="close-nav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col items-center  gap-10 text-gray-600">
+        <li>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="product.html">Products</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </li>
+      </ul>
+     </section>
     <section class="bg-green-100 p-4 md:p-10 flex justify-center md:justify-between ">
        <div class="m-5">
         <p class="mb-4">We Offer You a wide range of Artificial and Natural flowers.</p>
@@ -136,5 +153,6 @@
             <p class="mt-4">GreenDen is your trusted online plant store dedicated to bringing nature closer to your home.</p>
             <p class="mt-4">© 2024 Greenden. All rights reserved.</p>
            </section>
+          <script src="index.js"></script>
   </body>
 </html>
